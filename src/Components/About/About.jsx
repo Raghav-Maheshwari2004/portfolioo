@@ -14,9 +14,9 @@ const About = () => {
       <div className="about-container">
         
         
-        <div className="about-left">
+{/*         <div className="about-left">
           <img src={assets.photo} alt="Your Photo" />
-        </div>
+        </div> */}
 
         
         <div className="about-right">
