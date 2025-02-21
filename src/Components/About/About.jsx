@@ -14,9 +14,9 @@ const About = () => {
       <div className="about-container">
         
         
-        {/* <div className="about-left">
+        <div className="about-left">
           <img src={assets.photo} alt="Your Photo" />
-        </div> */}
+        </div>
 
         
         <div className="about-right">
@@ -180,9 +180,9 @@ const About = () => {
 )}
 <div>
   <h1>My Works</h1>
-  <Link to="/talksy">
+  <a href="https://talksy-wxza-iaac2hfds-raghav-maheshwari2004s-projects.vercel.app/">
     <img className="works" src={assets.talksy2} alt="Talksy Project" />
-  </Link>
+    </a>
 </div>
     </div>
   );
