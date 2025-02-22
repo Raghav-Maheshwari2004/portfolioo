@@ -1,45 +1,45 @@
-/* General Styles */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: rgba(255, 255, 255, 0.8);
     color: #333;
+    overflow-x: hidden;
 }
-
-/* Container */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .container {
-    max-width: 1400px;  /* Increased width */
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
-    padding: 60px;  /* Increased padding */
+    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px;
-    /* min-height: 100vh; */
 }
-
 .container h1 {
-    font-size: 50px; /* Bigger heading */
+    font-size: 50px; 
     font-weight: bold;
     text-align: center;
 }
-
-/* About Section */
 .about-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     width: 200%;
-    max-width: 1100px;  /* Increased size */
+    max-width: 1200px; 
     margin-top: 40px;
-    gap: 50px; /* More spacing */
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 50px; 
 }
 
-/* Left Column (Photo) */
 .about-left {
     flex: 1;
     text-align: center;
@@ -49,29 +49,24 @@ body, html {
     margin-top: 20px;
     padding-top: 20px;
     width: 100%;
-    max-width: 350px; /* Increased max width */
+    max-width: 350px;
     height: auto;
     object-fit: cover;
 }
-
-/* Right Column (Text + Education) */
 .about-right {
     flex: 2;
     text-align: left;
 }
 
 .about-right h2 {
-    font-size: 30px; /* Bigger section headings */
+    font-size: 30px; 
     font-weight: bold;
     margin-bottom: 12px;
 }
-
 .about-right p {
-    font-size: 20px; /* Bigger paragraph text */
+    font-size: 20px; 
     line-height: 1.8;
 }
-
-/* Education Timeline */
 .education {
     margin-top: 40px;
 }
@@ -81,20 +76,17 @@ body, html {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-/* Timeline Structure */
 .timeline {
     position: relative;
-    padding-left: 30px; /* More spacing */
-    border-left: 4px solid #007bff; /* Thicker timeline bar */
+    padding-left: 30px; 
+    border-left: 4px solid #007bff; 
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 30px; /* More spacing */
-    padding-left: 25px; /* Increased spacing */
+    margin-bottom: 30px; 
+    padding-left: 25px; 
     border-radius: 5px;
-    /* border-left: 4px solid #007bff; */
     background:transparent;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -103,7 +95,6 @@ body, html {
     transform: translateY(-5px);
     box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
     background: rgba(0, 123, 255, 0.1);
-    /* border-left-color: #ff9800; */
 }
 
 .timeline-item::before {
@@ -111,13 +102,11 @@ body, html {
     position: absolute;
     left: -12px;
     top: 6px;
-    width: 20px; /* Bigger bullet point */
+    width: 20px; 
     height: 20px;
     background-color: #007bff;
     border-radius: 50%;
 }
-
-/* Styling the Text */
 .timeline-item h3 {
     font-size: 20px;
     font-weight: bold;
@@ -125,7 +114,7 @@ body, html {
 }
 .timeline-item small {
     display: block;
-    font-size: 18px; /* Bigger date text */
+    font-size: 18px; 
     color: #555;
     margin-bottom: 5px;
 }
@@ -155,64 +144,50 @@ p {
     color: #444;
     text-align: center; 
 }
-
-/* Skills Wrapper - Ensures Proper Center Alignment */
 .skills-wrapper {
     display: flex;
-    justify-content: center; /* Center-align all sections */
+    justify-content: center; 
     gap: 40px;
-    flex-wrap: nowrap; /* Allows sections to wrap if needed */
+    flex-wrap: nowrap; 
     text-align: center;
     margin-bottom: 20px;
     padding-right: 20px;
     width: 100%;
 }
-
-/* Ensuring Frontend, Backend, and Database Stay Centered */
 .frontend, .backend, .database {
-    flex: 1; /* Each section takes equal space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-/* Skills (Icons/Images) - Ensuring Proper Alignment */
 .skills {
     text-align: center;
     display: flex;
-    flex-wrap: nowrap; /* Allows wrapping for better alignment */
+    flex-wrap: nowrap; 
     gap: 20px;
-    justify-content: center; /* Ensures icons stay centered */
+    justify-content: center;
 }
-
-/* Skill Item (Each Tech Icon) */
 .skill-item {
-    position: relative; /* Ensures tooltip positioning works */
+    position: relative; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-/* Skill Item Image */
 .skill-item img {
     width: 100px; 
     height: 100px;
     transition: transform 0.3s ease-in-out;
 }
-
-/* Hover Effect */
 .skill-item img:hover {
     transform: scale(1.2);
 }
-
-/* Tooltip - Now Working Correctly */
 .tooltip {
     position: absolute;
-    bottom: -40px; /* Adjusted spacing */
-    left: 50%; /* Center the tooltip */
-    transform: translateX(-50%); /* Ensures perfect centering */
+    bottom: -40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
     padding: 7px 12px;
@@ -221,24 +196,18 @@ p {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out;
-    white-space: nowrap; /* Prevents text from breaking */
+    white-space: nowrap;
 }
-
-/* Show Tooltip on Hover */
 .skill-item:hover .tooltip {
     opacity: 1;
     visibility: visible;
 }
-
-/* Cloud Computing Section */
 .cloud-computing {
     margin-top: 20px;
     font-size: 1.2rem;
     color: #555;
     text-align: center;
 }
-
-/* Experience Section */
 .exp {
     background: white;
     padding: 20px;
@@ -251,25 +220,19 @@ p {
 .exp:hover {
     transform: translateY(-5px);
 }
-
-/* Company Logo */
 .company {
     width: 50px;
     vertical-align: middle;
     margin-right: 10px;
     border-radius: 15px;
 }
-/* Certifications Section */
-/* Certificates Section */
 .certificates {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 20px;
     justify-content: center;
     margin-top: 15px;
 }
-
-/* Certificate Card */
 .cert {
     display: flex;
     flex-direction: column;
@@ -280,22 +243,16 @@ p {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
-
-/* Hover Effect */
 .cert:hover {
     transform: translateY(-5px);
 }
-
-/* Certificate Images */
 .cert img {
     width: 100%;
-    aspect-ratio: 4/3; /* Ensures all images have the same aspect ratio */
+    aspect-ratio: 4/3; 
     object-fit: cover;
     border-radius: 8px;
     transition: 0.3s ease-in-out;
 }
-
-/* Download Button */
 .download-btn {
     margin-top: 10px;
     background: #007bff;
@@ -305,28 +262,23 @@ p {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    /* transition: background 0.3s; */
 }
-
 .download-btn:hover {
     background: #0056b3;
 }
-
-/* Tabs */
 .tabs {
-    margin-top: 60px; /* More spacing */
+    margin-top: 60px;
     display: flex;
-    gap: 25px; /* Wider spacing */
+    gap: 25px; 
     
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-
 .tab {
-    font-size: 20px; /* Bigger font */
+    font-size: 20px; 
     font-weight: 600;
     color: #007bff;
     cursor: pointer;
-    padding: 14px 24px; /* Bigger buttons */
+    padding: 14px 24px; 
     border-radius: 10px;
     transition: 0.3s;
 }
@@ -343,88 +295,66 @@ p {
 .works {
     width: 50%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Ensures no overflow */
+    border-radius: 10px; 
+    overflow: hidden; 
     display: block;
-    margin: auto; /* Centers the image */
+    margin: auto; 
     cursor: pointer;
 }
-
-/* Hover Effect */
 .works:hover {
-    transform: scale(1.05); /* Slightly enlarges the image */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-}
-@media (max-width: 1024px) {
-    .container {
-        padding: 50px;
-    }
-    .container h1 {
-        font-size: 40px;
-    }
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-left img {
-        max-width: 300px;
-    }
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        width: 100%;
-    }
-    .container h1 {
-        font-size: 35px;
-    }
     .about-container {
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: center; 
         text-align: center;
+        width: 100%; 
+        padding: 0 15px; 
+        gap: 30px;
     }
+
     .about-left img {
-        max-width: 250px;
+        max-width: 80%;
+        height: auto;
     }
+
     .about-right {
+        width: 100%; 
         text-align: center;
+        padding: 0 10px;
     }
+
     .timeline {
+        width: 100%;
         text-align: left;
         margin: auto;
     }
+    .tabs {
+        margin-top: 60px; 
+        display: flex;
+        gap: 2px; 
+        flex-wrap: nowrap;
+    }
     .skills-wrapper {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .skills {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    .certificates {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-        width: 100%;
-    }
-    .container h1 {
-        font-size: 28px;
-        word-wrap: break-word;
-    }
-    .about-left img {
-        max-width: 180px;
-    }
-    .tab {
-        font-size: 16px;
-        padding: 8px 12px;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px; 
+        padding-right: 0; 
     }
     .works {
-        width: 100%;
-        max-width: 320px;
+        width: 80%;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 10px; 
+        overflow: hidden; 
+        display: block;
+        margin: auto; 
+        cursor: pointer;
+    }
+    .works:hover {
+        transform: scale(1.05); 
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
     }
 }
-
