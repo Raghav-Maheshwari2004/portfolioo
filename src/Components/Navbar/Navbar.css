@@ -1,22 +1,19 @@
 nav {
     margin: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Bright glassmorphism effect */
+    background: rgba(255, 255, 255, 0.9); 
     backdrop-filter: blur(15px);
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align all items to the right */
+    justify-content: flex-end;
     padding: 15px 50px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
-
-/* Logo */
 .logo {
     width: 140px;
-    margin-left: auto; /* Push the logo to the right */
+    margin-left: auto; 
 }
 
-/* Navigation Menu */
 nav ul {
     list-style: none;
     display: flex;
@@ -30,20 +27,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333; /* Dark gray for contrast */
+    color: #333; 
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     position: relative;
     transition: 0.3s ease-in-out;
 }
-
-/* Hover Effect */
 nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background: #ff6f61; /* Professional red-orange */
+    background: #ff6f61; 
     position: absolute;
     left: 50%;
     bottom: -6px;
@@ -59,22 +54,49 @@ nav ul li a:hover {
     color: #ff6f61;
     text-shadow: 0px 0px 10px rgba(255, 111, 97, 0.6);
 }
-
-/* Active Link */
 nav ul li .active {
     color: #ff6f61;
     text-shadow: 0px 0px 12px rgba(255, 111, 97, 0.8);
 }
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     nav {
-        flex-direction: column;
-        text-align: center;
+        padding: 15px 30px;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 15px;
+        gap: 20px; 
     }
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        max-width: 300px; 
+    }
+
+    nav ul li {
+        width: 30%; 
+        text-align: center;
+    }
+
+    nav ul li:nth-child(n+4) { 
+        width: 45%;
+    }
+
+    .logo {
+        width: 120px; 
+        margin: 0 auto; 
+    }
+}
+
+
