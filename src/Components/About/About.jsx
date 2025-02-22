@@ -180,7 +180,7 @@ const About = () => {
 )}
 <div>
   <h1>My Works</h1>
-  <a href="https://talksy-wxza-iaac2hfds-raghav-maheshwari2004s-projects.vercel.app/">
+  <a href="https://talksy-wxza.vercel.app">
     <img className="works" src={assets.talksy2} alt="Talksy Project" />
     </a>
 </div>
