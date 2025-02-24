@@ -29,11 +29,13 @@ import screenshot5 from "./5.png"
 import screenshot6 from "./6.png"
 import screenshot7 from "./7.png"
 import frontend from "./Frontend.pdf"
+import cf4 from "./Screenshot 2025-02-25 012139.png"
 
 const assets = {
   cf1,
   cf2,
   cf3,
+  cf4,
   AWScertificate,
   AIcertificate,
   GenerativeAIcertificate,
