@@ -174,6 +174,10 @@ const About = () => {
         <img src={assets.cf3} alt="Certificate 3" />
         <a href={assets.GenerativeAIcertificate} download className="download-btn">Download</a>
       </div>
+      <div className="cert">
+        <img src={assets.cf4} alt="Certificate 3" />
+        <a href={assets.forntend} download className="download-btn">Download</a>
+      </div>
       
     </div>
   </div>
