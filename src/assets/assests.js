@@ -28,6 +28,7 @@ import screenshot4 from "./4.png"
 import screenshot5 from "./5.png"
 import screenshot6 from "./6.png"
 import screenshot7 from "./7.png"
+import frontend from "./Frontend.pdf"
 
 const assets = {
   cf1,
@@ -60,6 +61,7 @@ const assets = {
   screenshot5,
   screenshot6,
   screenshot7,
+  frontend
  
 };
 
