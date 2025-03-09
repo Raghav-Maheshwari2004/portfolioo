@@ -14,7 +14,7 @@ const About = () => {
       <div className="about-container">
         
         
-{/*         <div className="about-left">
+        {/* <div className="about-left">
           <img src={assets.photo} alt="Your Photo" />
         </div> */}
 
@@ -173,10 +173,6 @@ const About = () => {
       <div className="cert">
         <img src={assets.cf3} alt="Certificate 3" />
         <a href={assets.GenerativeAIcertificate} download className="download-btn">Download</a>
-      </div>
-      <div className="cert">
-        <img src={assets.cf4} alt="Certificate 3" />
-        <a href={assets.forntend} download className="download-btn">Download</a>
       </div>
       
     </div>
